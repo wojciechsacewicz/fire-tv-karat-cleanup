@@ -1,0 +1,25 @@
+# AFTKRT / karat, Fire OS 8.1.7.4 RS8174.3648N, incremental 0031877644420
+# Applied 2026-10-23; two reboot checks passed; several days of use still pending.
+# Selected owner choices. Disable for user 0, never uninstall. See CLEANUP.md.
+com.amazon.tv.acr
+com.amazon.hybridadidservice
+com.amazon.shoptv.firetv.client
+com.amazon.ceviche
+com.amazon.dp.logger
+com.amazon.client.metrics.api
+com.amazon.tv.easyupgrade
+com.amazon.perfc
+com.amazon.tahoe
+com.amazon.sneakpeek
+com.amazon.storm.lightning.tutorial
+com.amazon.wirelessmetrics.service
+com.amazon.device.telemetry.emitter
+com.amazon.minitv.android.app
+com.amazon.tmm.tutorial
+com.amazon.tv.developer.dataservice
+com.amazon.kso.blackbird
+com.amazon.shoptv.client
+com.amazon.tv.releasenotes
+com.amazon.gamehub
+com.amazon.perfcollection
+com.amazon.bueller.music
