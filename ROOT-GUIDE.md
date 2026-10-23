@@ -110,7 +110,7 @@ adb -P "$FIRETV_ADB_PORT" -s "$FIRETV_SERIAL" shell \
 
 Our proof reported ROOTED with uid/euid 0, `su -c id` independently returned uid=0(root), and SELinux was Permissive. Check that native Settings, Home and your apps still work. Do not kill the preload children or root daemon while you need that session. The root shell listeners are on loopback ports 9999 and 9060; no port-forwarding is required for the su verification above.
 
-Then use [EXISTING-ROOT.md](EXISTING-ROOT.md) for the configuration changes root enabled. We did not automate them into this root procedure. At the time of publication their final reboot persistence remained untested.
+Then use [EXISTING-ROOT.md](EXISTING-ROOT.md) for the configuration changes root enabled. We did not automate them into this root procedure. The owner confirmed Aerial remained Home after reboot on 23 October 2026. Post-reboot native Settings and remote-shortcut checks remain outstanding.
 
 ## Alternative archive, not our successful artifact
 

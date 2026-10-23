@@ -19,23 +19,26 @@ The two incremental values came from different properties on the same unit. They
 
 ## Result
 
-- Aerial STANDARD 1.41 provides Home, with Nuvio, SmartTube Beta, Netflix, Spotify and Appstore in the dock.
-- Twenty-two selected packages were disabled without root. Their state and the initial accessibility-based launcher setup survived two normal reboots.
-- Privacy switches and featured-content autoplay were turned off through Amazon's menus.
-- The open-source AirPlay receiver worked with an iPhone, including the TV PIN. Its delayed boot startup was also verified before the later root changes.
-- Existing temporary root later allowed a real default Home, working native Settings through a small bridge, and native remote shortcuts 1 = Nuvio and 2 = Spotify.
-- The final post-root Home configuration and remote shortcuts were tested during that running session. They have NOT been tested through a subsequent reboot.
+- Aerial STANDARD 1.41 replaces Amazon Home. The owner confirmed it remained Home after a reboot on 23 October 2026.
+- Twenty-two selected packages were disabled without root, with persistence checked across two earlier reboots.
+- Native Settings opens from Aerial through a small Settings bridge.
+- Nuvio, SmartTube Beta, Netflix and Spotify are available from Home.
+- The open-source AirPlay receiver was tested with an iPhone and PIN pairing.
+- Native remote shortcuts were set to 1 = Nuvio and 2 = Spotify, without a background remapping app. Their post-reboot behavior still needs confirmation.
 
-Use [the no-root guide](CLEANUP.md) first. For the source-build root route, see [ROOT-GUIDE.md](ROOT-GUIDE.md) and [required downloads](DOWNLOADS.md). [The story](STORY.md) explains the decisions. [The existing-root reference](EXISTING-ROOT.md) records the additional configuration without bundling an exploit. [Sources](SOURCES.md) identify the upstream projects and selected APK hashes.
+## Guides
 
-## Limits
+- [Cleanup without root](CLEANUP.md).
+- [Temporary-root build and run guide](ROOT-GUIDE.md).
+- [Required tools and downloads](DOWNLOADS.md).
+- [Home, Settings and native remote-button configuration](EXISTING-ROOT.md).
+- [The full story](STORY.md).
+- [Upstream sources and APK hashes](SOURCES.md).
 
-This does not remove every Amazon service, every possible advertisement, or in-app advertising. Appstore, account services, input, native Settings, Alexa services and casting services were retained. Hiding a tile does not disable its package.
+## Scope
 
-There is no measured performance improvement. Native Netflix launch was verified, but playback, DRM resolution and streaming quality were not verified. Spotify reached its login page; its playback was not tested. Preserved Alexa services are not evidence of a completed voice-search test.
+Tested on the model and firmware above. Home persistence is owner-confirmed after reboot; several days of ordinary use are still pending. We do not claim universal compatibility or a measured speedup.
 
-The connected display advertised up to 1080p at 60 Hz, with an observed 59.94 Hz mode. Resolution was left on Auto. This does not establish the Stick's output limit on another display.
+The root payload disables OTA updates and clears updater data, and its successful session had kernel metadata side effects. Read the root guide before using it. No bootloader unlock or partition flashing was performed.
 
-The root payload disabled OTA packages and cleared updater data. That is separate from the no-root cleanup, prevents normal updates and is not a default recommendation. Temporary root also left runtime kernel metadata side effects; an apparently stable session does not establish safety or repeatability. No bootloader unlock or partition flashing was performed.
-
-No binaries, proprietary APKs, raw logs, account data, device identifiers, screenshots or firmware backups are distributed here. This is newly written documentation, not a copy of the private setup directory.
+Appstore, native Settings, account, input, Alexa and casting services were retained. Hiding a launcher tile does not disable its package or remove every Amazon service or in-app advertisement.
