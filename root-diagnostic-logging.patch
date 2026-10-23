@@ -1,0 +1,20 @@
+diff --git a/src/rootchain.c b/src/rootchain.c
+--- a/src/rootchain.c
++++ b/src/rootchain.c
+@@ -52,6 +52,15 @@ static int stamp_once(uint64_t pc, uint64_t target) {
+   buf[EXP_W_TREE_LEFT]  = target;
+   buf[EXP_W_TASK]       = kaslr_image_addr(INIT_TASK);
+   buf[EXP_W_LOCK]       = kaslr_image_addr(PANIC_SCRATCH) + (uint64_t)(g_slot++) * SLOT_STRIDE;
+-  exp_stack_once(buf);
++#ifdef STAMP_DIAG_PROBE
++  pr_info("PROBE stamp slot=%d pc=%#llx target=%#llx lock=%#llx\n",
++          g_slot - 1, (unsigned long long)pc, (unsigned long long)target,
++          (unsigned long long)buf[EXP_W_LOCK]);
++#endif
++  int rc = exp_stack_once(buf);
++#ifdef STAMP_DIAG_PROBE
++  pr_info("PROBE stamp slot=%d rc=%d\n", g_slot - 1, rc);
++#endif
++  (void)rc;
+   return 1;
+ }

@@ -1,6 +1,6 @@
 # Fire TV Stick 4K Max (2nd generation) cleanup notes
 
-A model-specific report from one owner's device, tested on 23 October 2026. This is a provisional guide, not a universal compatibility claim or a rooting tool.
+A model-specific report from one owner's device, tested on 23 October 2026. This is a provisional guide, not a universal compatibility claim or a guarantee of reliable rooting.
 
 ## Tested device
 
@@ -26,7 +26,7 @@ The two incremental values came from different properties on the same unit. They
 - Existing temporary root later allowed a real default Home, working native Settings through a small bridge, and native remote shortcuts 1 = Nuvio and 2 = Spotify.
 - The final post-root Home configuration and remote shortcuts were tested during that running session. They have NOT been tested through a subsequent reboot.
 
-Use [the no-root guide](CLEANUP.md) first. [The story](STORY.md) explains the decisions. [The existing-root reference](EXISTING-ROOT.md) records the additional configuration without bundling an exploit. [Sources](SOURCES.md) identify the upstream projects and selected APK hashes.
+Use [the no-root guide](CLEANUP.md) first. For the source-build root route, see [ROOT-GUIDE.md](ROOT-GUIDE.md) and [required downloads](DOWNLOADS.md). [The story](STORY.md) explains the decisions. [The existing-root reference](EXISTING-ROOT.md) records the additional configuration without bundling an exploit. [Sources](SOURCES.md) identify the upstream projects and selected APK hashes.
 
 ## Limits
 

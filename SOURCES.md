@@ -7,7 +7,7 @@ Reviewed on 23 October 2026. Versions below describe this setup, not a promise t
 - [Maintainer discussion on Fire TV scope](https://github.com/Gathin23/cleanyourtv/pull/467). The 22 October discussion requests debloat/troubleshooting separately from Home takeover. Use the PR discussion if an individual comment link changes.
 - [Kuphi setup](https://github.com/Kuphi/fire-tv-karat-setup/tree/21f69f24fd7fb5c91b51b25714d669b356b86d01). Inspiration and selected Settings bridge, not an end-to-end workflow executed on this unit.
 - [fire-tv-cleanup](https://github.com/itsmeterrylin/fire-tv-cleanup). Additional Fire OS accessibility-based Home experience on another device.
-- [GhostLock](https://github.com/R0rt1z2/GhostLock). Upstream root research. Our setup documentation does not distribute the exploit or claim its safety.
+- [GhostLock](https://github.com/R0rt1z2/GhostLock). Upstream root research. Our root guide links the pinned upstream source and provides a small logging patch, not a mirrored exploit binary or a safety guarantee.
 - [Aerial 1.41](https://github.com/pengchujin/aerial-tv/releases/tag/v1.41). STANDARD APK. Maintainer's [Fire TV discussion](https://github.com/pengchujin/aerial-tv/issues/175) explicitly says Home takeover depends on firmware and was not tested by them.
 - [Nuvio TV releases](https://github.com/NuvioMedia/NuvioTV/releases). Installed 1.1.0-beta.8 ARM32; check the original release asset before reproducing.
 - [SmartTube](https://github.com/yuliskov/SmartTube). Installed 32.68 Beta ARM32.
