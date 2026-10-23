@@ -1,6 +1,6 @@
 # Cleanup without root
 
-Scope: the AFTKRT build in README.md. These operations were performed on one unit on 23 October 2026. Several days of ordinary use are still needed before treating the package list as a mature recommendation.
+Scope: the AFTKRT build in README.md. These operations were performed on one unit on 23 October 2026. The owner subsequently confirmed the setup works after reboot and marked usage testing complete. The elapsed duration was not independently recorded.
 
 ## Connect and record the baseline
 
@@ -32,6 +32,6 @@ Apply one reviewed package at a time with `adb -s DEVICE shell pm disable-user -
 
 The list does not include Amazon Home, Settings, OTA, Appstore, keyboard, remote/Bluetooth, account or casting components. It never uninstalls system packages. Eight unwanted launcher tiles were also hidden through Aerial without disabling the underlying services.
 
-After a small batch, check Home, native Settings, Appstore, app launch, Wi-Fi and the physical remote. Check casting and actual playback. Reboot only when ready, then confirm the intended state and startup behavior. Our 22 disables persisted through two reboots; broad playback acceptance and several days of use remain outstanding.
+After a small batch, check Home, native Settings, Appstore, app launch, Wi-Fi and the physical remote. Check casting and actual playback. Reboot only when ready, then confirm the intended state and startup behavior. Our 22 disables persisted through two earlier reboots. The owner later confirmed everything was working after reboot and marked usage testing complete. This owner confirmation does not establish a measured speedup or independently measured playback/DRM resolution.
 
 If you keep using wireless ADB, remember it is a privileged administration interface. Turn debugging off when you no longer need it.

@@ -1,6 +1,6 @@
 # Fire TV Stick 4K Max (2nd generation) cleanup notes
 
-A model-specific report from one owner's device, tested on 23 October 2026. This is a provisional guide, not a universal compatibility claim or a guarantee of reliable rooting.
+A model-specific report from one owner's device, tested on 23 October 2026. The owner has confirmed the setup works after reboot and marked usage testing complete. This is not a universal compatibility claim or a guarantee of reliable rooting.
 
 ## Tested device
 
@@ -24,7 +24,7 @@ The two incremental values came from different properties on the same unit. They
 - Native Settings opens from Aerial through a small Settings bridge.
 - Nuvio, SmartTube Beta, Netflix and Spotify are available from Home.
 - The open-source AirPlay receiver was tested with an iPhone and PIN pairing.
-- Native remote shortcuts were set to 1 = Nuvio and 2 = Spotify, without a background remapping app. Their post-reboot behavior still needs confirmation.
+- Native remote shortcuts were set to 1 = Nuvio and 2 = Spotify, without a background remapping app. The owner confirmed the configured setup works after reboot.
 
 ## Guides
 
@@ -37,7 +37,7 @@ The two incremental values came from different properties on the same unit. They
 
 ## Scope
 
-Tested on the model and firmware above. Home persistence is owner-confirmed after reboot; several days of ordinary use are still pending. We do not claim universal compatibility or a measured speedup.
+Tested on the model and firmware above. Post-reboot operation and usage acceptance are owner-confirmed. The elapsed test duration was not independently recorded. We do not claim universal compatibility or a measured speedup.
 
 The root payload disables OTA updates and clears updater data, and its successful session had kernel metadata side effects. Read the root guide before using it. No bootloader unlock or partition flashing was performed.
 

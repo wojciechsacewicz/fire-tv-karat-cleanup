@@ -1,5 +1,5 @@
 # AFTKRT / karat, Fire OS 8.1.7.4 RS8174.3648N, incremental 0031877644420
-# Applied 2026-10-23; two reboot checks passed; several days of use still pending.
+# Applied 2026-10-23; two instrumented reboot checks passed; later reboot/use acceptance owner-confirmed.
 # Selected owner choices. Disable for user 0, never uninstall. See CLEANUP.md.
 com.amazon.tv.acr
 com.amazon.hybridadidservice
